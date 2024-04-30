@@ -1,0 +1,84 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Anderson Grotesk', ;
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/AndersonGrotesk-Light.otf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Anderson Grotesk', ;
+    font-style: italic;
+    font-weight: 300;
+    src: url('./fonts/AndersonGrotesk-LightOblique.otf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Anderson Grotesk', ;
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/AndersonGrotesk-Bold.otf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Anderson Grotesk', ;
+    font-style: italic;
+    font-weight: 700;
+    src: url('./fonts/AndersonGrotesk-BoldOblique.otf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Anderson Grotesk', ;
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/AndersonGrotesk-Ultrabold.otf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Anderson Grotesk', ;
+    font-style: italic;
+    font-weight: 900;
+    src: url('./fonts/AndersonGrotesk-UltraboldOblique.otf');
+}
+
+:root {
+    --white: #fff;
+    --off-white: #f6efe2;
+    --green: #8fbc8f;
+    --deep-green: #0d261d;
+    --lavender: #ccbfd9;
+    --body-font: 'Anderson Grotesk', Arial, Helvetica, sans-serif;
+	--container-width: 90vw;
+	--container-max-width: 1600px;
+	--container-outer-padding: 50px;
+	--container-outer-margin: calc((100vw - var(--container-width)) / 2);
+	--viewport-edge: calc((var(--container-outer-margin) + var(--container-outer-padding)) * -1);
+	--gap: 40px;
+	--grid: repeat(12,1fr);
+	--module-spacing-small: 64px;
+	--module-spacing-medium: 80px;
+	--module-spacing-large: 120px;
+	--module-spacing-xlarge: 160px;
+	--text-spacing-xxsmall: 8px;
+	--text-spacing-xsmall: 16px;
+	--text-spacing-small: 24px;
+	--text-spacing-medium: 32px;
+	--text-spacing-large: 40px;
+	--text-spacing-xlarge: 48px;
+	--text-spacing-xxlarge: 56px;
+}
+
+body {
+    color: var(--deep-green);
+    font: 700 calc(16rem / 16)/calc(20 / 16) var(--body-font);
+}
+
+.minesweeper {
+    background: var(--off-white);
+}
+
