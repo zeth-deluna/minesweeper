@@ -33,3 +33,13 @@ land_boxes.forEach((box) => {
     });
 
 });
+
+// Reset
+
+document.querySelector('.reset').addEventListener('click', (e) => {
+
+    land_boxes.forEach((box) => {
+        box.setAttribute('state', 'hidden');
+    });
+
+});
